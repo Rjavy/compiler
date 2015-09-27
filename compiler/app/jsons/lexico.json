@@ -1,0 +1,30 @@
+{
+  "@(.*)": {
+      "type": "ID"
+    },
+  "[=]": {
+      "type": "Math equals"
+    },
+  "[+]": {
+      "type": "Math sum"
+    },
+  "[-]": {
+    "type": "Math subtraction"
+  },
+  "[\/]": {
+      "type": "Math division"
+    },
+  "[*]": {
+      "type": "Math multiply"
+    },
+  "^([0-9])*$": {
+      "type" : "Integer"
+    },
+    "\"(.*)\"": {
+      "type": "String"
+    },
+    "loop": {
+      "type" : "Iteration reserved word"
+    }
+
+}

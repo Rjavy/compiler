@@ -1,0 +1,32 @@
+<section>
+
+	<form>
+		<div class="form-group">
+			<label>Escribe tu codigo:</label>
+			<hr>
+			<textarea name="" id="" cols="30" rows="10" ng-model="writeCode"></textarea>
+		</div>
+		<div class="form-group">
+			<button ng-click="filterWriteCode()" class="btn">Obtener Tokens</button>
+		</div>
+	</form>
+
+
+	<h2>Split code</h2>
+	<p>{{splitWriteCode}}</p>
+	<h2>Tokens</h2>
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<td>Simbolo</td>
+				<td>Tipo</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="token in tokens">
+				<td>{{token.simbol}}</td>
+				<td>{{token.type}}</td>
+			</tr>
+		</tbody>
+	</table>
+</section>
