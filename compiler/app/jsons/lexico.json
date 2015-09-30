@@ -25,6 +25,14 @@
     },
     "loop": {
       "type" : "Iteration reserved word"
+    },
+    "in": {
+      "type": "Loop to point an object inside a loop"
+    },
+    "\\(|\\)": {
+      "type": "Separator of sentences"
+    },
+    "\\{|\\}": {
+      "type": "Wrapper of functionalities"
     }
-
 }
